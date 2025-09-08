@@ -1,0 +1,53 @@
+.main {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main p {
+  color: white;
+}
+
+.rootate {
+  position: relative;
+  color: white;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.front {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  height: 200px;
+  backface-visibility: hidden;
+  transition: transform 0.7s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+}
+
+.back {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  background-color: orange;
+  transform: rotateY(-180deg);
+  transition: transform 0.5s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+}
+
+.rootate:hover .back {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.rootate:hover .front {
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+/*# sourceMappingURL=blockAbout.module.css.map */
