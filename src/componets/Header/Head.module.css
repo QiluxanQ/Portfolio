@@ -6,4 +6,52 @@
   color: #cccccc;
 }
 
+.title {
+  text-align: center;
+}
+
+.welcome {
+  animation: spin 2s linear infinite;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.blockTopic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(75deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 /*# sourceMappingURL=Head.module.css.map */

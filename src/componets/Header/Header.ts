@@ -1,5 +1,11 @@
 
+interface IHeaders {
+    info:string;
+}
+
+
 export interface IHeader {
-    topic: string;
+    topic: IHeaders[];
     title: string;
+    smile: string;
 }

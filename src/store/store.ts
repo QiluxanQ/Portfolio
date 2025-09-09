@@ -1,9 +1,22 @@
 const store = {
     en: {
         header: {
-            title: 'About Me👋',
-            topic: 'Hi i`m Frontend developer with a passion for creating intuitive and performant web applications.\n' +
-                'I specialize in React and the modern JavaScript ecosystem. I love turning complex problems into elegant solutions.'
+            title: 'About Me',
+            topic: [
+                {
+                   info: 'Hi i`m Frontend developer with a passion for creating intuitive and performant web applications.\n' +
+                        'I specialize in React and the modern JavaScript ecosystem. I love turning complex problems into elegant solutions.',
+                },
+                {
+                    info:'Frontend developer (React / TypeScript). I create interfaces that solve business problems: fast, ' +
+                        'functional and scalable. Attention to detail and love for code are my key principles.',
+                },
+                {
+                    info: 'Frontend developer and part-time React fan. My credo: clean code, thoughtful UI and' +
+                        ' no unnecessary reloads. I take complex tasks and turn them into intuitive and fast interfaces that are pleasant to use.',
+                },
+            ],
+            smile:'👋'
         },
         skills: {
             blockSkils: {
@@ -89,9 +102,22 @@ const store = {
     },
     ru: {
         header: {
-            title: 'О себе👋',
-            topic: 'Frontend-разработчик с passion к созданию интуитивных и производительных веб-приложений.' +
-                'Специализируюсь на React и современном JavaScript ecosystem. Люблю превращать сложные задачи в элегантные решения.',
+            title: 'О себе',
+            topic: [
+                {
+                    info: 'Привет, я фронтенд-разработчик, увлеченный созданием интуитивно понятных и производительных веб-приложений.\n' +
+                        'Я специализируюсь на React и современной экосистеме JavaScript. Мне нравится превращать сложные проблемы в элегантные решения.',
+                },
+                {
+                    info:'Frontend-разработчик (React / TypeScript). Создаю интерфейсы, которые решают бизнес-задачи: ' +
+                        'быстрые, функциональные и масштабируемые. Внимание к деталям и любовь к коду — мои ключевые принципы.',
+                },
+                {
+                    info: 'Фронтенд-разработчик и по совместительству фанат React. Мое кредо: чистый код, продуманный UI и' +
+                        ' никаких лишних перезагрузок. Беру сложные задачи и превращаю их в интуитивные и быстрые интерфейсы, которые приятно использовать.',
+                },
+            ],
+            smile:'👋'
         },
         skills: {
             blockSkils: {

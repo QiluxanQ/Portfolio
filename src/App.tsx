@@ -47,8 +47,12 @@ const App: React.FC = () => {
             </div>
             <div className={A.body}>
                 <Head topic={store[curentLanguage].header.topic}
-                      title={store[curentLanguage].header.title}/>
-                <BlocksAbout description={store[curentLanguage].blocks.technologiesBlock}  width={store[curentLanguage].blocks.width} height={store[curentLanguage].blocks.height} />
+                      title={store[curentLanguage].header.title}
+                        smile={store[curentLanguage].header.smile}
+                />
+                <BlocksAbout description={store[curentLanguage].blocks.technologiesBlock}
+                             width={store[curentLanguage].blocks.width}
+                             height={store[curentLanguage].blocks.height} />
             </div>
             <div>
             </div>

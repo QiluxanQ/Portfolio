@@ -27,6 +27,8 @@ const BlocksAbout: FC<IBlock> = ({description, width, height}) => {
                         </div>
                     </div>
                 ))}
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=QiluxanQ&hide=html&layout=compact&theme=dark&langs_count=6" alt='stats'/>
+
 
             </div>
         </div>
