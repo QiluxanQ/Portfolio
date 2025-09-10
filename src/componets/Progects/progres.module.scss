@@ -1,0 +1,31 @@
+
+.main{
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  color: white;
+  .blockTopic{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    .topic{
+      font-family: "Leelawadee UI";
+
+    }
+  }
+
+
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  gap: 1rem;
+  }
+  .blockInfo{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
