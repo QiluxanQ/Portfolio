@@ -2,11 +2,13 @@ import * as React from "react";
 import Head from "./componets/Header/Head.tsx";
 import store from "./store/store.ts";
 import Body from "./componets/MainBlock/Body.tsx";
-import { useState} from "react";
+import {useEffect, useState} from "react";
 import A from './app.module.css'
 import HambyrgerMenu from "./componets/HamburgerMenu/HambyrgerMenu.tsx";
 import Leangviges from "./componets/languageg/Leangviges.tsx";
 import BlocksAbout from "./componets/BlocksAbout/BlocksAbout.tsx";
+import AboutMe from "./componets/AboutMe/AboutMe.tsx";
+import Progects from "./componets/Progects/Progects.tsx";
 
 
 const App: React.FC = () => {
@@ -14,19 +16,16 @@ const App: React.FC = () => {
     const [hideMenu, setHideMenu] = useState<boolean>(true);
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
-    // const [minSize, setMinSize] = useState<boolean>(window.innerWidth < 768);
-    //
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         const newWidth = window.innerWidth;
-    //         setMinSize(newWidth < 768);
-    //     };
-    //     window.addEventListener('resize', handleResize);
-    //     return () => window.removeEventListener('resize', handleResize);
-    // }, []);
-
-
-
+    useEffect(() => {
+        if (isOpen){
+            document.body.style.overflowY = "hidden";
+        }else{
+            document.body.style.overflowY = "unset";
+        }
+        return () => {
+            document.body.style.overflowY = "unset";
+        }
+    },[isOpen]);
 
     return (
         <>
@@ -37,8 +36,14 @@ const App: React.FC = () => {
             <div className={A.head}>
                 <div className={A.blockVisit}>
                     <div className={`${A.menu} ${isOpen ? A.open : ''}`} onClick={() => {
-                        setHideMenu(!hideMenu)
-                        setIsOpen(!isOpen)
+                        if (isOpen === false ){
+                            setHideMenu(!hideMenu)
+                            setIsOpen(!isOpen)
+                        }else {
+                            setHideMenu(!hideMenu)
+                            setIsOpen(!isOpen)
+                        }
+
                     }}>
                         <span className={A.menuLine}/>
                     </div>
@@ -53,7 +58,11 @@ const App: React.FC = () => {
                 <BlocksAbout description={store[curentLanguage].blocks.technologiesBlock}
                              width={store[curentLanguage].blocks.width}
                              height={store[curentLanguage].blocks.height} />
+                <AboutMe info={store[curentLanguage].aboutMe} img={store[curentLanguage].aboutMePhoto.img}/>
+
+                <Progects topic={store[curentLanguage].progects.topic.topic} progects={store[curentLanguage].progects.blockProgects} width={store[curentLanguage].progects.width} />
             </div>
+
             <div>
             </div>
         </>

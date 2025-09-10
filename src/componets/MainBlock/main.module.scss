@@ -3,14 +3,16 @@
 .main {
   position: relative;
   max-width: 1200px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
+
 .blockTechnologies{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 50px;
   .textName{
     font-family: "Roboto",sans-serif;
     font-optical-sizing: auto;

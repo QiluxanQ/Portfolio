@@ -1,14 +1,16 @@
+import aboutMePhoto from './../assets/about.jpg'
+
 const store = {
     en: {
         header: {
             title: 'About Me',
             topic: [
                 {
-                   info: 'Hi i`m Frontend developer with a passion for creating intuitive and performant web applications.\n' +
+                    info: 'Hi i`m Frontend developer with a passion for creating intuitive and performant web applications.\n' +
                         'I specialize in React and the modern JavaScript ecosystem. I love turning complex problems into elegant solutions.',
                 },
                 {
-                    info:'Frontend developer (React / TypeScript). I create interfaces that solve business problems: fast, ' +
+                    info: 'Frontend developer (React / TypeScript). I create interfaces that solve business problems: fast, ' +
                         'functional and scalable. Attention to detail and love for code are my key principles.',
                 },
                 {
@@ -16,7 +18,7 @@ const store = {
                         ' no unnecessary reloads. I take complex tasks and turn them into intuitive and fast interfaces that are pleasant to use.',
                 },
             ],
-            smile:'👋'
+            smile: '👋'
         },
         skills: {
             blockSkils: {
@@ -54,9 +56,12 @@ const store = {
                         name: 'Git',
                         image: 'https://cdn.iconscout.com/icon/free/png-256/free-git-icon-svg-png-download-1175219.png?f=webp'
                     },
-
+                    {
+                        name: 'Materia UI',
+                        image: 'https://svgmix.com/uploads/5b99f5-material-ui.svg'
+                    },
                 ],
-                width: 100,
+                width: 150,
             },
         },
         menu: {
@@ -96,8 +101,67 @@ const store = {
                 },
 
             ],
-            width:200,
-            height:200,
+            width: 200,
+            height: 200,
+        },
+        aboutMePhoto:{
+            img:aboutMePhoto,
+        },
+        aboutMe: [
+            {
+            topic: 'Education',
+            description: 'I have a diploma as a programmer technician from the Molodechno Trade and Economic College. I form my ' +
+                'main expertise in web development through self-education: ' +
+                'I study modern technologies (React, JavaScript/TypeScript), practice creating real projects and constantly improve my skills.',
+            date: '2021-2023',
+        },
+            {
+                topic: 'Army',
+                description: 'Completed compulsory military service. This experience taught me discipline, responsibility and the ability ' +
+                    'to work in a team to achieve common goals under tight deadlines and high workload.' +
+                    ' I successfully apply the stress-resistance and problem-solving skills I learned there in development.',
+                date: '2023-2025'
+            },
+            {
+                topic: 'Path in development',
+                description: 'Frontend development is a mix of constant practice ' +
+                    ' (Codewars, personal projects) and studying materials: I watch conferences, read blogs of leading developers, look at the current technology stack.',
+                date: '2021 - To date',
+            },
+            {
+                topic: 'My goals',
+                description: 'I am aiming for the position of Junior Frontend Developer, where I can apply my skills on real projects, work in a team of experienced' +
+                    ' colleagues and actively grow as a specialist.' +
+                    ' In the long term, I want to become a full-fledged React developer, delve into the architecture and development of complex high-load applications',
+                date: ''
+            },
+            {
+                topic: 'Technologies',
+                description: 'In my work I use: React, JavaScript, TypeScript, HTML5, CSS3, Git. I am familiar with the concepts of REST API,' +
+                    ' state management (Zustand), builders (Vite) and principles of adaptive and cross-browser layout. I plan to study Next.js and Node.js.',
+                date: ''
+            },
+        ],
+        progects: {
+            topic:{
+                topic: 'Progects'
+            },
+            blockProgects:[
+                {
+                    name: 'Клиника',
+                    images:'https://cdn-edge.kwork.ru/files/portfolio/t0_r/96/5ff509a75e3bfd0be9a01c863ba31d26ed4834fa-1689276527.webp',
+                },
+                {
+                    name: 'Клиника',
+                    images:'https://cdn-edge.kwork.ru/files/portfolio/t0_r/96/5ff509a75e3bfd0be9a01c863ba31d26ed4834fa-1689276527.webp',
+                },
+                {
+                    name: 'Клиника',
+                    images:'https://cdn-edge.kwork.ru/files/portfolio/t0_r/96/5ff509a75e3bfd0be9a01c863ba31d26ed4834fa-1689276527.webp',
+                }
+
+            ],
+            width:570
         },
     },
     ru: {
@@ -109,7 +173,7 @@ const store = {
                         'Я специализируюсь на React и современной экосистеме JavaScript. Мне нравится превращать сложные проблемы в элегантные решения.',
                 },
                 {
-                    info:'Frontend-разработчик (React / TypeScript). Создаю интерфейсы, которые решают бизнес-задачи: ' +
+                    info: 'Frontend-разработчик (React / TypeScript). Создаю интерфейсы, которые решают бизнес-задачи: ' +
                         'быстрые, функциональные и масштабируемые. Внимание к деталям и любовь к коду — мои ключевые принципы.',
                 },
                 {
@@ -117,7 +181,7 @@ const store = {
                         ' никаких лишних перезагрузок. Беру сложные задачи и превращаю их в интуитивные и быстрые интерфейсы, которые приятно использовать.',
                 },
             ],
-            smile:'👋'
+            smile: '👋'
         },
         skills: {
             blockSkils: {
@@ -150,10 +214,18 @@ const store = {
                     {
                         name: 'Redux',
                         image: 'https://img.icons8.com/ios_filled/512/7950F2/redux.png'
-                    }
+                    },
+                    {
+                        name: 'Git',
+                        image: 'https://cdn.iconscout.com/icon/free/png-256/free-git-icon-svg-png-download-1175219.png?f=webp'
+                    },
+                    {
+                        name: 'Materia UI',
+                        image: 'https://svgmix.com/uploads/5b99f5-material-ui.svg'
+                    },
 
                 ],
-                width: 100,
+                width: 150,
 
             },
         },
@@ -193,14 +265,57 @@ const store = {
 
                 },
             ],
-            width:200,
-            height:200,
+            width: 200,
+            height: 200,
         },
-        aboutMe:[{
-            topic:'',
-            description:'',
-            date:''
-        }]
+        aboutMePhoto:{
+            img:aboutMePhoto,
+        },
+        aboutMe: [
+            {
+                topic: 'Оброзования',
+                description: 'Имею диплом техника-программиста Молодечненского торгово-экономического колледжа. Основную экспертизу в веб-разработке формирую через' +
+                    ' самообразование: изучаю современные технологии ' +
+                    '(React, JavaScript/TypeScript), практикуюсь в создаении реальных проектов и постоянно совершенствую свои навыки.',
+                date: '2021-2023',
+            },
+            {
+                topic: 'Армия',
+                description: 'Прошел срочную военную службу. Этот опыт научил меня дисциплине, ответственности и умению работать в команде для достижения общих целей в ' +
+                    'условиях сжатых сроков и высокой нагрузки. Навыки стрессоустойчивости и решения нестандартных задач, полученные там, я успешно применяю и в разработке.',
+                date: '2023-2025'
+            },
+            {
+                topic: 'Путь в разработке',
+                description: 'Развитие во фронтенде — это микс из постоянной практики ' +
+                    '(Codewars, личные проекты) и изучения материалов: смотрю конференции, читаю блоги ведущих разработчиков, смотрю об актуальном стеке технологий.',
+                date: '2021 - По настоящее время',
+            },
+            {
+                topic: 'Мои цели',
+                description: 'Стремлюсь к позиции Junior Frontend-разработчика, где смогу применять свои навыки на реальных проектах, работать в' +
+                    ' команде опытных коллег и активно расти как специалист. В долгосрочной перспективе хочу стать полноценным React-разработчиком,' +
+                    ' углубиться в архитектуру и разработку сложных высоконагруженных приложений.',
+                date: ''
+            },
+            {
+                topic: 'Технологии',
+                description: 'В своей работе использую: React, JavaScript, TypeScript, HTML5, CSS3, Git. Ознакомлен с концепциями REST API, state-менеджмента (Zustand), сборщиками (Vite) и принципами адаптивной и кроссбраузерной верстки. В планах изучение Next.js и Node.js.',
+                date: ''
+            }
+        ],
+        progects: {
+            topic:{
+                topic: 'Education'
+            },
+            blockProgects:[
+                {
+                    name: 'Клиника',
+                    images:'https://cdn-edge.kwork.ru/files/portfolio/t1/19/cover-10644665-1693424061.jpg',
+                }
+            ],
+            width:40
+        },
     }
 }
 

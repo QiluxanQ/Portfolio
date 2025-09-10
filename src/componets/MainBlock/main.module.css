@@ -2,7 +2,7 @@
 .main {
   position: relative;
   max-width: 1200px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .blockTechnologies {
@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 .blockTechnologies .textName {
   font-family: "Roboto", sans-serif;

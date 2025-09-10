@@ -3,7 +3,7 @@ import type {IMenu} from "./Menu.ts";
 import H from './hamburger.module.css'
 
 
-const HambyrgerMenu:FC<IMenu> = ({title,about,info}) => {
+const   HambyrgerMenu:FC<IMenu> = ({title,about,info}) => {
     return (
         <div className={H.menu} >
              <h2>  {title}</h2>
