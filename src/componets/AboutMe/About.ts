@@ -9,4 +9,5 @@ interface About {
 export interface IAboutMe {
   info: About[],
     img:string,
+
 }

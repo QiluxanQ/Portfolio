@@ -1,4 +1,8 @@
 import aboutMePhoto from './../assets/about.jpg'
+import Wrihle from './../assets/Whirl.png'
+import logoCross from './../assets/logoCrosFit.png'
+import crossFit from './../assets/market.png'
+import authorization from './../assets/authorization.png'
 
 const store = {
     en: {
@@ -67,7 +71,8 @@ const store = {
         menu: {
             title: 'Main',
             about: 'About',
-            info: 'Information',
+            info: 'Project',
+            social:'Social',
         },
         blocks: {
             technologiesBlock: [{
@@ -104,17 +109,18 @@ const store = {
             width: 200,
             height: 200,
         },
-        aboutMePhoto:{
-            img:aboutMePhoto,
+        aboutMePhoto: {
+            img: aboutMePhoto,
         },
         aboutMe: [
+
             {
-            topic: 'Education',
-            description: 'I have a diploma as a programmer technician from the Molodechno Trade and Economic College. I form my ' +
-                'main expertise in web development through self-education: ' +
-                'I study modern technologies (React, JavaScript/TypeScript), practice creating real projects and constantly improve my skills.',
-            date: '2021-2023',
-        },
+                topic: 'Education',
+                description: 'I have a diploma as a programmer technician from the Molodechno Trade and Economic College. I form my ' +
+                    'main expertise in web development through self-education: ' +
+                    'I study modern technologies (React, JavaScript/TypeScript), practice creating real projects and constantly improve my skills.',
+                date: '2021-2023',
+            },
             {
                 topic: 'Army',
                 description: 'Completed compulsory military service. This experience taught me discipline, responsibility and the ability ' +
@@ -143,25 +149,59 @@ const store = {
             },
         ],
         progects: {
-            topic:{
+            topic: {
                 topic: 'Progects'
             },
-            blockProgects:[
+            blockProgects: [
                 {
-                    name: 'Клиника',
-                    images:'https://cdn-edge.kwork.ru/files/portfolio/t0_r/96/5ff509a75e3bfd0be9a01c863ba31d26ed4834fa-1689276527.webp',
+                    id: 1,
+                    name: 'CrossFit',
+                    images: logoCross,
+                    screenshots:[crossFit]
                 },
                 {
-                    name: 'Клиника',
-                    images:'https://cdn-edge.kwork.ru/files/portfolio/t0_r/96/5ff509a75e3bfd0be9a01c863ba31d26ed4834fa-1689276527.webp',
+                    id: 2,
+                    name: 'Таро',
+                    images: 'https://cdn-edge.kwork.ru/files/portfolio/t0_r/38/0e9d9464821e00d1bd5276e3900060f7423df3c1-1689276862.webp',
+                    screenshots:['https://cdn-edge.kwork.ru/files/portfolio/t0_r/08/b1f42abe5c420308cc31b012a37d549cc1d4511b-1689276862.webp',
+                        'https://cdn-edge.kwork.ru/files/portfolio/t0_r/50/00bd90dd5704e6e282a45e0d8b84fe4613955b32-1689276864.webp',
+                        'https://cdn-edge.kwork.ru/files/portfolio/t0_r/19/ddbd152f2223d39b628c6dc3f400797b4f05fcec-1689276864.webp',
+                    'https://cdn-edge.kwork.ru/files/portfolio/t0_r/87/295a7a5b087fbb36347bf0ec0abd8addd2336546-1689276865.webp'
+                    ]
                 },
                 {
-                    name: 'Клиника',
-                    images:'https://cdn-edge.kwork.ru/files/portfolio/t0_r/96/5ff509a75e3bfd0be9a01c863ba31d26ed4834fa-1689276527.webp',
-                }
-
+                    id: 3,
+                    name: 'Wrihle',
+                    images: 'https://cdn-edge.kwork.ru/files/portfolio/t0_r/85/f4973606738ff66494295185903cae7f04b511d6-1754386885.webp',
+                    screenshots:[Wrihle]
+                },
+                {
+                    id: 4,
+                    name: 'Autorization',
+                    images: authorization,
+                    screenshots:[authorization]
+                },
             ],
-            width:570
+            width: 570,
+
+        },
+        socialc: {
+            media: [
+                {
+                logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png',
+                links: 'https://t.me/QilasQ',
+
+            },
+                {
+                    logo:'https://static.vecteezy.com/system/resources/previews/023/986/568/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png',
+                    links:'https://www.linkedin.com/in/%D0%B8%D0%BB%D1%8C%D1%8F-%D0%B1%D0%B5%D0%BB%D0%BE%D0%B2-368263226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+                },
+                {
+                    logo:'https://images.icon-icons.com/3685/PNG/512/github_logo_icon_229278.png',
+                    links:'https://github.com/QiluxanQ',
+                },
+            ],
+            width: 50
         },
     },
     ru: {
@@ -232,7 +272,8 @@ const store = {
         menu: {
             title: 'Основная',
             about: 'Обо мне',
-            info: 'Информация',
+            info: 'Проекты',
+            social:'Соц сети',
         },
         blocks: {
             technologiesBlock: [{
@@ -268,8 +309,8 @@ const store = {
             width: 200,
             height: 200,
         },
-        aboutMePhoto:{
-            img:aboutMePhoto,
+        aboutMePhoto: {
+            img: aboutMePhoto,
         },
         aboutMe: [
             {
@@ -305,16 +346,58 @@ const store = {
             }
         ],
         progects: {
-            topic:{
-                topic: 'Education'
+            topic: {
+                topic: 'Progects'
             },
-            blockProgects:[
+            blockProgects: [
                 {
-                    name: 'Клиника',
-                    images:'https://cdn-edge.kwork.ru/files/portfolio/t1/19/cover-10644665-1693424061.jpg',
-                }
+                    id: 1,
+                    name: 'CrossFit',
+                    images: logoCross,
+                    screenshots:[crossFit]
+                },
+                {
+                    id: 2,
+                    name: 'Таро',
+                    images: 'https://cdn-edge.kwork.ru/files/portfolio/t0_r/38/0e9d9464821e00d1bd5276e3900060f7423df3c1-1689276862.webp',
+                    screenshots:['https://cdn-edge.kwork.ru/files/portfolio/t0_r/08/b1f42abe5c420308cc31b012a37d549cc1d4511b-1689276862.webp',
+                        'https://cdn-edge.kwork.ru/files/portfolio/t0_r/50/00bd90dd5704e6e282a45e0d8b84fe4613955b32-1689276864.webp',
+                        'https://cdn-edge.kwork.ru/files/portfolio/t0_r/19/ddbd152f2223d39b628c6dc3f400797b4f05fcec-1689276864.webp',
+                        'https://cdn-edge.kwork.ru/files/portfolio/t0_r/87/295a7a5b087fbb36347bf0ec0abd8addd2336546-1689276865.webp'
+                    ]
+                },
+                {
+                    id: 3,
+                    name: 'Wrihle',
+                    images: 'https://cdn-edge.kwork.ru/files/portfolio/t0_r/85/f4973606738ff66494295185903cae7f04b511d6-1754386885.webp',
+                    screenshots:[Wrihle]
+                },
+                {
+                    id: 4,
+                    name: 'Autorization',
+                    images: authorization,
+                    screenshots:[authorization]
+                },
             ],
-            width:40
+            width: 570
+        },
+        socialc: {
+            media: [
+                {
+                    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png',
+                    links: 'https://t.me/QilasQ',
+
+                },
+                {
+                    logo:'https://static.vecteezy.com/system/resources/previews/023/986/568/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png',
+                    links:'https://www.linkedin.com/in/%D0%B8%D0%BB%D1%8C%D1%8F-%D0%B1%D0%B5%D0%BB%D0%BE%D0%B2-368263226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+                },
+                {
+                    logo:'https://images.icon-icons.com/3685/PNG/512/github_logo_icon_229278.png',
+                    links:'https://github.com/QiluxanQ',
+                },
+            ],
+            width: 50
         },
     }
 }

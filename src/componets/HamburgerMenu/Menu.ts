@@ -1,7 +1,15 @@
 
 
+
+ interface MenuData {
+  title: string;
+  about: string;
+  info: string;
+  social: string;
+}
+
+
 export interface IMenu {
-  title:string,
-  about:string,
-  info:string,
+  menu:MenuData;
+  onclose?:() => void,
 }

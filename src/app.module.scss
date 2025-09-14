@@ -16,40 +16,80 @@ time, mark, audio, video {
   border: 0;
   vertical-align: baseline;
 }
+
+
+
+.section {
+  scroll-margin-top:190rem; /* Высота sticky header */
+}
+
+.App{
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+}
+.head{
+  background-image: url(https://zefirka.club/wallpapers/uploads/posts/2023-03/thumbs/1678112545_zefirka-club-p-fon-dlya-saita-vk-9.jpg);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 20px;
+
+}
+
 .body{
+  //background-image: url(https://avatanplus.com/files/resources/original/577928e10a8ee155b147af13.jpg);
+
+  background-image: url(https://img.freepik.com/premium-vector/black-background-with-small-white-dot-that-says-black_214056-829.jpg);
+  position: sticky;
+  top: 20px;
+  z-index: 2;
+  padding: 30px;
+  border-radius: 40px 40px 0 0;
+  transition: all 0.3s ease;
+}
+
+.about{
+  position: sticky;
+  top: 80px;
+  z-index: 3;
   background-image: url(https://avatanplus.com/files/resources/original/577928e10a8ee155b147af13.jpg);
-  
+  padding: 30px;  transition: all 3.3s ease;
+  border-radius: 40px;
 }
 
 .hamburger{
   width: 250px;
   height: 100%;
   background: hsl(0, 0%, 100%,80%);
-
   position: fixed;
   top: 0;
   left: -350px;
   z-index: 1000;
-  padding: 20px;
+
   transition: left 0.3s ease;
   border-right: 2px solid #ccc;
-
-
   &.visible {
     left: 0;
+
   }
 }
-.head{
-  padding: 20px;
-  background-image: url(https://zefirka.club/wallpapers/uploads/posts/2023-03/thumbs/1678112545_zefirka-club-p-fon-dlya-saita-vk-9.jpg);
+.arrow{
+  width: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  opacity: 0.7
 }
 
 .menu {
+  position: sticky;
+  z-index: 12;
   width: 30px;
   height: 24px;
-  position: relative;
   cursor: pointer;
-  display: block;
   align-items: center;
   margin: 35px;
   &::before,
@@ -59,7 +99,7 @@ time, mark, audio, video {
     left: 0;
     width: 100%;
     height: 3px;
-    background: aquamarine;
+    background: black;
     transition: all 0.3s ease;
   }
 
@@ -74,9 +114,11 @@ time, mark, audio, video {
 
 
 .menuLine {
+  position: sticky;
+  z-index: 12;
   width: 100%;
   height: 3px;
-  background: aquamarine;
+  background: black;
   transition: all 0.3s ease;
 
 }
@@ -107,7 +149,7 @@ time, mark, audio, video {
   transform: translateY(-50%);
   width: 100%;
   height: 3px;
-  background: aquamarine;
+  background: black;
   transition: all 0.3s ease;
 }
 
@@ -116,5 +158,4 @@ time, mark, audio, video {
   right: 0;
   top: 0;
   z-index: 10;
-
 }

@@ -1,3 +1,14 @@
+@media (max-width: 790px) {
+  .images {
+    width: 551px;
+  }
+}
+@media (max-width: 790px) and (max-width: 600px) {
+  .images {
+    width: 330px !important;
+    height: 160px;
+  }
+}
 .main {
   position: relative;
   margin: 0 auto;
@@ -12,6 +23,10 @@
 .main .blockTopic .topic {
   font-family: "Leelawadee UI";
 }
+.main h2 {
+  font-family: "Leelawadee UI";
+  font-style: italic;
+}
 
 .block {
   display: flex;
@@ -21,11 +36,38 @@
   gap: 1rem;
 }
 
+.blockInfo:hover {
+  transform: scale(1.1);
+  transition: 1.2s ease;
+}
+
 .blockInfo {
   border: 1px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 1.2s ease;
+  padding: 10px;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+}
+
+.imageModal {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.i {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=progres.module.css.map */

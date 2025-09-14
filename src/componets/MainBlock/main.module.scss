@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+@media (max-width: 730px) {
+  .bigHover{
+    display: flex;
+    flex-direction: column;
+  }
+  .img{
+    width: 70px !important;
+  }
+
+
+}
+
+
 .main {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .blockTechnologies{
   display: flex;
   flex-direction: column;

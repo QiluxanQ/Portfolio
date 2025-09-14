@@ -1,0 +1,19 @@
+.main {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.main .block {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 20px;
+}
+.main .line {
+  margin: 70px auto 0;
+  width: 80%;
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=social.module.css.map */

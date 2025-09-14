@@ -12,7 +12,6 @@ const BlocksAbout: FC<IBlock> = ({description, width, height}) => {
             <div className={B.block}>
                 {description.map(item => (
                     <div className={B.rootate} key={item.name}>
-
                         <div className={B.front}  style={{
                             backgroundImage: `url(${item.image})`,
                             width: `${width}px`,
@@ -32,7 +31,7 @@ const BlocksAbout: FC<IBlock> = ({description, width, height}) => {
 
             </div>
             <div style={{display:'flex',justifyContent:'center'}}>
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=QiluxanQ&hide=html&layout=compact&theme=dark&langs_count=6" alt='stats'/>
+                <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=QiluxanQ&hide=html&layout=compact&theme=dark&langs_count=6" alt='stats'/>
             </div>
 
         </div>

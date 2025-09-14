@@ -18,6 +18,8 @@
   gap: 50px;
   justify-content: center;
   padding: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .front {
