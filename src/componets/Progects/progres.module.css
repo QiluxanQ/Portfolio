@@ -3,10 +3,15 @@
     width: 551px;
   }
 }
-@media (max-width: 790px) and (max-width: 600px) {
+@media (max-width: 600px) {
   .images {
-    width: 330px !important;
+    width: 320px !important;
     height: 160px;
+  }
+}
+@media (max-width: 380px) {
+  .images {
+    width: 300px !important;
   }
 }
 .main {

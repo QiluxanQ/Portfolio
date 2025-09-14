@@ -1,4 +1,22 @@
 
+@media (max-width: 720px) {
+  .blockTopic{
+    display: flex;
+    flex-direction: column;
+  }
+  .topic{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .blocks{
+    border: 1px solid aquamarine;
+    padding: 20px;
+  }
+}
 
 .mainBlock{
   position: relative;

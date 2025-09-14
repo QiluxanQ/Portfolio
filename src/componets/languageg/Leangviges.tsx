@@ -1,6 +1,7 @@
-import type {FC} from "react";
+import  {type FC} from "react";
 import A from './../../app.module.css'
 import type {ILanguag} from "./Languag.ts";
+import * as React from "react";
 
 
 const Leangviges:FC<ILanguag> = ({curentLanguage,setCurentLanguage}) => {

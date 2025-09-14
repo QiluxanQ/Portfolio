@@ -16,7 +16,7 @@ const Head:FC<IHeader> = ({title,topic,smile}) => {
                <div className={H.blockTopic}>
                    <h2 className={H.topic}>
                        {topic.map(name => (
-                       <div key={name.info}>
+                       <div key={name.info} className={H.blocks}>
                            <h4>{name.info}</h4>
                        </div>
                    ))}</h2>

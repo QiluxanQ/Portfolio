@@ -1,15 +1,24 @@
 
-@media ( max-width:790px)  {
-  .images{
-    width:551px;
-  }
-  @media (max-width: 600px) {
-    .images{
-      width: 330px !important ;
-      height: 160px;
-    }
+@media ( max-width:790px) {
+  .images {
+    width: 551px;
   }
 }
+
+@media (max-width: 600px) {
+  .images{
+    width: 320px !important ;
+    height: 160px;
+  }
+}
+
+  @media (max-width: 380px) {
+    .images{
+      width: 300px !important;
+    }
+  }
+
+
 
 
 .main{
